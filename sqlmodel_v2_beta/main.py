@@ -30,13 +30,13 @@ from typing import (
 
 import pydantic
 from annotated_types import MaxLen
-from pydantic import BaseModel, EmailStr, ImportString, NameEmail
+from pydantic import BaseModel, EmailStr, ImportString, Json, NameEmail
 from pydantic._internal._fields import PydanticGeneralMetadata
 from pydantic._internal._model_construction import ModelMetaclass
 from pydantic._internal._repr import Representation
 from pydantic.fields import FieldInfo as PydanticFieldInfo
 from pydantic_core import PydanticUndefined, PydanticUndefinedType
-from sqlalchemy import Boolean, Column, Date, DateTime
+from sqlalchemy import JSON, Boolean, Column, Date, DateTime
 from sqlalchemy import Enum as sa_Enum
 from sqlalchemy import Float, ForeignKey, Integer, Interval, Numeric, inspect
 from sqlalchemy.orm import RelationshipProperty, declared_attr, registry, relationship
@@ -523,6 +523,8 @@ def get_sqlalchemy_type(field: FieldInfo) -> Any:
         return AutoString
     if issubclass(type_, uuid.UUID):
         return GUID
+    if issubclass(type_, Json):
+        return JSON
     raise ValueError(f"The field {field.title} has no matching SQLAlchemy type")
 
 
