@@ -43,9 +43,9 @@ if TYPE_CHECKING:  # pragma: no cover
 
 _TScalar_0 = TypeVar(
     "_TScalar_0",
-    Column,
-    Sequence,
-    Mapping,
+    Column,  # type: ignore
+    Sequence,  # type: ignore
+    Mapping,  # type: ignore
     UUID,
     datetime,
     float,
@@ -61,9 +61,9 @@ _TModel_0 = TypeVar("_TModel_0", bound="SQLModel")
 
 _TScalar_1 = TypeVar(
     "_TScalar_1",
-    Column,
-    Sequence,
-    Mapping,
+    Column,  # type: ignore
+    Sequence,  # type: ignore
+    Mapping,  # type: ignore
     UUID,
     datetime,
     float,
@@ -79,9 +79,9 @@ _TModel_1 = TypeVar("_TModel_1", bound="SQLModel")
 
 _TScalar_2 = TypeVar(
     "_TScalar_2",
-    Column,
-    Sequence,
-    Mapping,
+    Column,  # type: ignore
+    Sequence,  # type: ignore
+    Mapping,  # type: ignore
     UUID,
     datetime,
     float,
@@ -97,9 +97,9 @@ _TModel_2 = TypeVar("_TModel_2", bound="SQLModel")
 
 _TScalar_3 = TypeVar(
     "_TScalar_3",
-    Column,
-    Sequence,
-    Mapping,
+    Column,  # type: ignore
+    Sequence,  # type: ignore
+    Mapping,  # type: ignore
     UUID,
     datetime,
     float,
@@ -117,12 +117,12 @@ _TModel_3 = TypeVar("_TModel_3", bound="SQLModel")
 
 
 @overload
-def select(entity_0: _TScalar_0) -> SelectOfScalar[_TScalar_0]:
+def select(entity_0: _TScalar_0) -> SelectOfScalar[_TScalar_0]:  # type: ignore
     ...
 
 
 @overload
-def select(entity_0: Type[_TModel_0]) -> SelectOfScalar[_TModel_0]:
+def select(entity_0: Type[_TModel_0]) -> SelectOfScalar[_TModel_0]:  # type: ignore
     ...
 
 
@@ -130,7 +130,7 @@ def select(entity_0: Type[_TModel_0]) -> SelectOfScalar[_TModel_0]:
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
 ) -> Select[Tuple[_TScalar_0, _TScalar_1]]:
@@ -138,7 +138,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
 ) -> Select[Tuple[_TScalar_0, _TModel_1]]:
@@ -146,7 +146,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
 ) -> Select[Tuple[_TModel_0, _TScalar_1]]:
@@ -154,7 +154,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
 ) -> Select[Tuple[_TModel_0, _TModel_1]]:
@@ -162,7 +162,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
     entity_2: _TScalar_2,
@@ -171,7 +171,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
     entity_2: Type[_TModel_2],
@@ -180,7 +180,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
     entity_2: _TScalar_2,
@@ -189,7 +189,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
     entity_2: Type[_TModel_2],
@@ -198,7 +198,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
     entity_2: _TScalar_2,
@@ -207,7 +207,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
     entity_2: Type[_TModel_2],
@@ -216,7 +216,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
     entity_2: _TScalar_2,
@@ -225,7 +225,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
     entity_2: Type[_TModel_2],
@@ -234,7 +234,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
     entity_2: _TScalar_2,
@@ -244,7 +244,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
     entity_2: _TScalar_2,
@@ -254,7 +254,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
     entity_2: Type[_TModel_2],
@@ -264,7 +264,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: _TScalar_1,
     entity_2: Type[_TModel_2],
@@ -274,7 +274,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
     entity_2: _TScalar_2,
@@ -284,7 +284,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
     entity_2: _TScalar_2,
@@ -294,7 +294,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
     entity_2: Type[_TModel_2],
@@ -304,7 +304,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: _TScalar_0,
     entity_1: Type[_TModel_1],
     entity_2: Type[_TModel_2],
@@ -314,7 +314,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
     entity_2: _TScalar_2,
@@ -324,7 +324,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
     entity_2: _TScalar_2,
@@ -334,7 +334,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
     entity_2: Type[_TModel_2],
@@ -344,7 +344,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: _TScalar_1,
     entity_2: Type[_TModel_2],
@@ -354,7 +354,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
     entity_2: _TScalar_2,
@@ -364,7 +364,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
     entity_2: _TScalar_2,
@@ -374,7 +374,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
     entity_2: Type[_TModel_2],
@@ -384,7 +384,7 @@ def select(
 
 
 @overload
-def select(
+def select(  # type: ignore
     entity_0: Type[_TModel_0],
     entity_1: Type[_TModel_1],
     entity_2: Type[_TModel_2],
@@ -396,14 +396,14 @@ def select(
 # Generated overloads end
 
 
-def select(*entities: Any) -> Union[Select, SelectOfScalar]:
+def select(*entities: Any) -> Union[Select, SelectOfScalar]:  # type: ignore
     if len(entities) == 1:
-        return SelectOfScalar(*entities)
-    return Select(*entities)
+        return SelectOfScalar(*entities)  # type: ignore
+    return Select(*entities)  # type: ignore
 
 
 # TODO: add several @overload from Python types to SQLAlchemy equivalents
-def col(column_expression: Any) -> ColumnClause:
+def col(column_expression: Any) -> ColumnClause:  # type: ignore
     if not isinstance(column_expression, (ColumnClause, Column, InstrumentedAttribute)):
         raise RuntimeError(f"Not a SQLAlchemy column: {column_expression}")
-    return column_expression
+    return column_expression  # type: ignore
