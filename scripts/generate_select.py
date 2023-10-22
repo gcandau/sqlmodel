@@ -7,8 +7,8 @@ import black
 from jinja2 import Template
 from pydantic import BaseModel
 
-template_path = Path(__file__).parent.parent / "sqlmodel/sql/expression.py.jinja2"
-destiny_path = Path(__file__).parent.parent / "sqlmodel/sql/expression.py"
+template_path = Path(__file__).parent.parent / "sqlmodel_v2_beta/sql/expression.py.jinja2"
+destiny_path = Path(__file__).parent.parent / "sqlmodel_v2_beta/sql/expression.py"
 
 
 number_of_types = 4
@@ -57,7 +57,7 @@ current_content = destiny_path.read_text()
 
 if current_content != result and os.getenv("CHECK_JINJA"):
     raise RuntimeError(
-        "sqlmodel/sql/expression.py content not update with Jinja2 template"
+        "sqlmodel_v2_beta/sql/expression.py content not update with Jinja2 template"
     )
 
 destiny_path.write_text(result)
