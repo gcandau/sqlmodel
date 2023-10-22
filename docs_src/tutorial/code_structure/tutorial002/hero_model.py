@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING, Optional
 
-from sqlmodel import Field, Relationship, SQLModel
+from sqlmodel_v2_beta import Field, Relationship, SQLModel
 
 if TYPE_CHECKING:
     from .team_model import Team

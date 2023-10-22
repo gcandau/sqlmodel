@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
-from sqlmodel import create_engine
-from sqlmodel.pool import StaticPool
+from sqlmodel_v2_beta import create_engine
+from sqlmodel_v2_beta.pool import StaticPool
 
 openapi_schema = {
     "openapi": "3.1.0",

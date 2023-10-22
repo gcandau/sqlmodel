@@ -3,7 +3,7 @@ import sys
 
 import pytest
 from pydantic import AnyUrl, UrlConstraints
-from sqlmodel import (
+from sqlmodel_v2_beta import (
     BigInteger,
     Column,
     DateTime,

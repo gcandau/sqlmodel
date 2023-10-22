@@ -1,6 +1,6 @@
 from typing import Optional  # (1)
 
-from sqlmodel import Field, SQLModel, create_engine  # (2)
+from sqlmodel_v2_beta import Field, SQLModel, create_engine  # (2)
 
 
 class Hero(SQLModel, table=True):  # (3)

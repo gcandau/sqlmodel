@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from sqlmodel import Session, SQLModel, create_engine
+from sqlmodel_v2_beta import Session, SQLModel, create_engine
 
 from .main import app, get_session  # (1)
 

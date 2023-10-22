@@ -2,7 +2,7 @@ from typing import Optional
 
 from sqlalchemy import create_engine, select
 from sqlalchemy.orm import Session
-from sqlmodel import Field, SQLModel
+from sqlmodel_v2_beta import Field, SQLModel
 
 
 def test_allow_instantiation_without_arguments(clear_sqlmodel):

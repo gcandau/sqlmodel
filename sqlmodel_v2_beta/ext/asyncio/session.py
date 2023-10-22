@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio.engine import AsyncConnection, AsyncEngine
 from sqlalchemy.orm import Mapper
 from sqlalchemy.sql.expression import TableClause
 from sqlalchemy.util.concurrency import greenlet_spawn
-from sqlmodel.sql.base import Executable
+from sqlmodel_v2_beta.sql.base import Executable
 
 from ...engine.result import ScalarResult
 from ...orm.session import Session

@@ -1,4 +1,4 @@
-from sqlmodel import Session, create_engine, select
+from sqlmodel_v2_beta import Session, create_engine, select
 
 
 def test_tutorial(clear_sqlmodel):

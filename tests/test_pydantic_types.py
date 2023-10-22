@@ -1,5 +1,5 @@
 from pydantic import EmailStr, HttpUrl, ImportString, NameEmail
-from sqlmodel import Field, SQLModel, create_engine
+from sqlmodel_v2_beta import Field, SQLModel, create_engine
 
 
 def test_pydantic_types(clear_sqlmodel, caplog):

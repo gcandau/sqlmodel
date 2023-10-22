@@ -1,6 +1,6 @@
 from typing import Optional
 
-from sqlmodel import Field, Session, SQLModel, create_engine
+from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine
 
 
 def test_model_copy(clear_sqlmodel):

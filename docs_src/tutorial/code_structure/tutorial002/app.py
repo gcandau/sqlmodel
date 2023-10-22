@@ -1,4 +1,4 @@
-from sqlmodel import Session
+from sqlmodel_v2_beta import Session
 
 from .database import create_db_and_tables, engine
 from .hero_model import Hero

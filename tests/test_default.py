@@ -1,6 +1,6 @@
 from typing import Any
 
-from sqlmodel.default import Default
+from sqlmodel_v2_beta.default import Default
 
 
 def test_default_bool() -> None:

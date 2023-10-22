@@ -2,7 +2,7 @@ import importlib
 
 import pytest
 from fastapi.testclient import TestClient
-from sqlmodel import Session
+from sqlmodel_v2_beta import Session
 
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import main as app_mod
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import test_main_006 as test_mod

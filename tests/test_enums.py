@@ -3,7 +3,7 @@ import uuid
 
 from sqlalchemy import create_mock_engine
 from sqlalchemy.sql.type_api import TypeEngine
-from sqlmodel import Field, SQLModel
+from sqlmodel_v2_beta import Field, SQLModel
 
 """
 Tests related to Enums

@@ -5,8 +5,8 @@ from typing import Any, Callable, Dict, List, Union
 
 import pytest
 from pydantic import BaseModel
-from sqlmodel import SQLModel
-from sqlmodel.main import default_registry
+from sqlmodel_v2_beta import SQLModel
+from sqlmodel_v2_beta.main import default_registry
 
 top_level_path = Path(__file__).resolve().parent.parent
 docs_src_path = top_level_path / "docs_src"

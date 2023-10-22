@@ -1,6 +1,6 @@
 from typing import Optional
 
-from sqlmodel import Field, Session, SQLModel, create_engine, or_, select
+from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine, or_, select
 
 
 class Hero(SQLModel, table=True):

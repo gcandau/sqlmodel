@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-from sqlmodel import Field, SQLModel
+from sqlmodel_v2_beta import Field, SQLModel
 
 
 def test_fields_set():

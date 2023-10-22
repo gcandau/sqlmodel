@@ -1,6 +1,6 @@
 from sqlalchemy import inspect
 from sqlalchemy.engine.reflection import Inspector
-from sqlmodel import create_engine
+from sqlmodel_v2_beta import create_engine
 
 
 def test_create_db_and_table(clear_sqlmodel):

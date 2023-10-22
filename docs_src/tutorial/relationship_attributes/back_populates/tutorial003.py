@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from sqlmodel import Field, Relationship, SQLModel, create_engine
+from sqlmodel_v2_beta import Field, Relationship, SQLModel, create_engine
 
 
 class Hero(SQLModel, table=True):

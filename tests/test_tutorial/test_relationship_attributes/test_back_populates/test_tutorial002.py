@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from sqlmodel import create_engine
+from sqlmodel_v2_beta import create_engine
 
 from ....conftest import get_testing_print_function
 

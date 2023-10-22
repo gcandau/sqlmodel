@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from sqlmodel import Field, Relationship, SQLModel
+from sqlmodel_v2_beta import Field, Relationship, SQLModel
 
 
 class Team(SQLModel, table=True):

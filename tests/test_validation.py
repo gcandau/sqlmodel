@@ -3,7 +3,7 @@ from typing import Optional
 import pytest
 from pydantic import field_validator
 from pydantic.error_wrappers import ValidationError
-from sqlmodel import SQLModel
+from sqlmodel_v2_beta import SQLModel
 
 
 def test_validation(clear_sqlmodel):

@@ -1,7 +1,7 @@
 from typing import Optional
 
 from fastapi import FastAPI
-from sqlmodel import Field, Session, SQLModel, create_engine, select
+from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine, select
 
 
 class Hero(SQLModel, table=True):

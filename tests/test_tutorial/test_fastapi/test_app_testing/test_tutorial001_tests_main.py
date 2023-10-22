@@ -4,7 +4,7 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import inspect
 from sqlalchemy.engine.reflection import Inspector
-from sqlmodel import Session, create_engine
+from sqlmodel_v2_beta import Session, create_engine
 
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import main as app_mod
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import test_main as test_mod

@@ -3,7 +3,7 @@ from typing import Optional
 import pytest
 from pydantic import AnyUrl, UrlConstraints
 from sqlalchemy.exc import IntegrityError
-from sqlmodel import Field, Session, SQLModel, create_engine
+from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine
 from typing_extensions import Annotated
 
 MoveSharedUrl = Annotated[
