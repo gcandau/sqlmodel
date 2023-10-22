@@ -4,7 +4,6 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import inspect
 from sqlalchemy.engine.reflection import Inspector
-from sqlmodel_v2_beta import Session, create_engine
 
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import main as app_mod
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import test_main as test_mod
@@ -12,6 +11,7 @@ from docs_src.tutorial.fastapi.app_testing.tutorial001.test_main import (
     client_fixture,
     session_fixture,
 )
+from sqlmodel_v2_beta import Session, create_engine
 
 assert session_fixture, "This keeps the session fixture used below"
 assert client_fixture, "This keeps the client fixture used below"

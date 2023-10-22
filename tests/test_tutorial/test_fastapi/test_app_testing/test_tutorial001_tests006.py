@@ -2,7 +2,6 @@ import importlib
 
 import pytest
 from fastapi.testclient import TestClient
-from sqlmodel_v2_beta import Session
 
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import main as app_mod
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import test_main_006 as test_mod
@@ -10,6 +9,7 @@ from docs_src.tutorial.fastapi.app_testing.tutorial001.test_main_006 import (
     client_fixture,
     session_fixture,
 )
+from sqlmodel_v2_beta import Session
 
 assert session_fixture, "This keeps the session fixture used below"
 assert client_fixture, "This keeps the client fixture used below"

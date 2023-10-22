@@ -1,6 +1,7 @@
 from typing import Optional
 
 from fastapi import FastAPI
+
 from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine, select
 
 

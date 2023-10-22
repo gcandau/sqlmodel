@@ -3,8 +3,9 @@ from typing import Optional
 import pytest
 from pydantic import AnyUrl, UrlConstraints
 from sqlalchemy.exc import IntegrityError
-from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine
 from typing_extensions import Annotated
+
+from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine
 
 MoveSharedUrl = Annotated[
     AnyUrl, UrlConstraints(max_length=512, allowed_schemes=["smb", "ftp", "file"])

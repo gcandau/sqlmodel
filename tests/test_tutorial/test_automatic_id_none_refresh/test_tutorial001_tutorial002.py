@@ -2,7 +2,6 @@ from typing import Any, Dict, List, Union
 from unittest.mock import patch
 
 from sqlmodel_v2_beta import create_engine
-
 from tests.conftest import get_testing_print_function
 
 

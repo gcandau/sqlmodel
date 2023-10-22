@@ -1,13 +1,13 @@
 import importlib
 
 import pytest
-from sqlmodel_v2_beta import Session
 
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import main as app_mod
 from docs_src.tutorial.fastapi.app_testing.tutorial001 import test_main_005 as test_mod
 from docs_src.tutorial.fastapi.app_testing.tutorial001.test_main_005 import (
     session_fixture,
 )
+from sqlmodel_v2_beta import Session
 
 assert session_fixture, "This keeps the session fixture used below"
 

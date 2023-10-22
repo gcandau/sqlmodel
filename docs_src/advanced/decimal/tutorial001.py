@@ -1,6 +1,7 @@
 from typing import Optional
 
 from pydantic import condecimal
+
 from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine, select
 
 

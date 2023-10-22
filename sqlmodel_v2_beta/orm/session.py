@@ -14,6 +14,7 @@ from sqlalchemy import util
 from sqlalchemy.orm import Mapper as _Mapper
 from sqlalchemy.orm import Session as _Session
 from sqlalchemy.sql.selectable import ForUpdateArg as _ForUpdateArg
+
 from sqlmodel_v2_beta.sql.expression import Select, SelectOfScalar
 
 from ..engine.result import Result, ScalarResult

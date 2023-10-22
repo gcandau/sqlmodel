@@ -2,6 +2,7 @@ from typing import Optional
 
 import pytest
 from pydantic import BaseModel
+
 from sqlmodel_v2_beta import Field, SQLModel
 
 

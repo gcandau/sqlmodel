@@ -2,6 +2,7 @@ from unittest.mock import patch
 
 import pytest
 from sqlalchemy.exc import SAWarning
+
 from sqlmodel_v2_beta import create_engine
 
 from ....conftest import get_testing_print_function

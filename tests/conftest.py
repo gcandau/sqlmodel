@@ -5,6 +5,7 @@ from typing import Any, Callable, Dict, List, Union
 
 import pytest
 from pydantic import BaseModel
+
 from sqlmodel_v2_beta import SQLModel
 from sqlmodel_v2_beta.main import default_registry
 

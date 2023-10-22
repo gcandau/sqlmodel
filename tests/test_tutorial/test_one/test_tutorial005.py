@@ -2,6 +2,7 @@ from unittest.mock import patch
 
 import pytest
 from sqlalchemy.exc import NoResultFound
+
 from sqlmodel_v2_beta import Session, create_engine, delete
 
 from ...conftest import get_testing_print_function

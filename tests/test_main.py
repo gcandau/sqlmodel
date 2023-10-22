@@ -2,6 +2,7 @@ from typing import Optional
 
 import pytest
 from sqlalchemy.exc import IntegrityError
+
 from sqlmodel_v2_beta import Field, Session, SQLModel, create_engine
 
 
