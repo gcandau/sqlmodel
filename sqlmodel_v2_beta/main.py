@@ -227,6 +227,7 @@ def Field(
         sa_column=sa_column,
         sa_column_args=sa_column_args,
         sa_column_kwargs=sa_column_kwargs,
+        json_schema_extra=current_schema_extra,
         **current_schema_extra,
     )
     return field_info
