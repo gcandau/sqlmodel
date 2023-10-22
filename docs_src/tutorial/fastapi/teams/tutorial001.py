@@ -1,7 +1,14 @@
 from typing import List, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query
-from sqlmodel_v2_beta import Field, Relationship, Session, SQLModel, create_engine, select
+from sqlmodel_v2_beta import (
+    Field,
+    Relationship,
+    Session,
+    SQLModel,
+    create_engine,
+    select,
+)
 
 
 class TeamBase(SQLModel):
