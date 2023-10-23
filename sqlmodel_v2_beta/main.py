@@ -553,6 +553,8 @@ def get_column_from_field(field: FieldInfo) -> Column:  # type: ignore
         field_nullable = getattr(field, "nullable")
         if field_nullable != PydanticUndefined:
             nullable = field_nullable
+    if nullable and field.default is PydanticUndefined:
+        field.default = None
     args = []
     foreign_key = getattr(field, "foreign_key", None)
     unique = getattr(field, "unique", False)
